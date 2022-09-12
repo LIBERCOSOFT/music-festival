@@ -116,6 +116,14 @@
     color: #4f4f4f;
   }
 
+  .event header h2 {
+    padding: 1em 0 0.5em 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
   .hero .hero__desc h2 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -126,5 +134,63 @@
 
   .hero .hero__desc .location {
     padding: 0 0.1em;
+  }
+
+  .event {
+    background-color: #242730;
+    color: #fff;
+    padding-bottom: 2em;
+  }
+
+  .event header {
+    text-align: center;
+  }
+
+  .event header hr {
+    width: 10%;
+    margin: 0 auto;
+    height: 0.1em;
+    border: none;
+    background-color: #ec5242;
+  }
+
+  .event .event__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    margin: 1em;
+    padding: 1em 0.5em;
+    background-color: #4f4f4f;
+  }
+
+  .event .event__item i {
+    font-size: 100%;
+    padding: 0 0.5em;
+    border: 1px solid yellow;
+  }
+
+  .event .event__item h3 {
+    color: #ec5242;
+    padding: 0 0.3em 0 0.8em;
+  }
+
+  .event .event__button {
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .event .event__button button {
+    padding: 2em;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #ec5242;
+    color: #fff;
+    border: none;
+  }
+
+  .event .event__button button:hover {
+    background-color: #fff;
+    color: #ec5242;
   }
 }
