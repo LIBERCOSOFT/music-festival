@@ -7,13 +7,29 @@
 @media screen and (max-width: 769px) {
   nav {
     padding: 1em;
+    background-color: #f7f7f7;
+  }
+
+  .hero {
+    padding: 2em 1em 3em 1em;
+    background-color: #f7f7f7;
+  }
+
+  .par {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: justify;
   }
 
   .cancel div,
   nav .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: #272a31;
+    background-color: #4f4f4f;
     padding: 2px 0;
     border: 1px solid #fff;
   }
@@ -34,6 +50,13 @@
     border: none;
   }
 
+  .mobile__dropdown {
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #f7f7f7;
+  }
+
   .mobile__dropdown ul {
     padding-top: 1em;
   }
@@ -50,7 +73,7 @@
 
   .mobile__dropdown ul li a {
     text-decoration: none;
-    color: #272a31;
+    color: #4f4f4f;
   }
 
   .no__display {
@@ -74,5 +97,34 @@
 
   .visibility {
     display: block;
+  }
+
+  .hero header {
+    color: #ec5242;
+  }
+
+  .hero header h1 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  .hero .hero__desc .hero__desc__txt {
+    border: 3px solid #fff;
+    padding: 1em;
+    color: #4f4f4f;
+  }
+
+  .hero .hero__desc h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #4f4f4f;
+  }
+
+  .hero .hero__desc .location {
+    padding: 0 0.1em;
   }
 }
