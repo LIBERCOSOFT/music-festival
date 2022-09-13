@@ -67,59 +67,63 @@
           <h2>Main Events</h2>
           <hr />
         </header>
-        <div class="event__item">
-          <img
-            src="assets/images/cowboy-hat-with-moustache-svgrepo-com.svg"
-            alt=""
-          />
-          <h3>Old Country and Western</h3>
-          <p>
-            Listen to some good old, vintage, and classic country musicians play
-          </p>
+        <div id="event__items">
+          <div class="event__item">
+            <img
+              src="assets/images/cowboy-hat-with-moustache-svgrepo-com.svg"
+              alt=""
+            />
+            <h3>Old Country and Western</h3>
+            <p>
+              Listen to some good old, vintage, and classic country musicians
+              play
+            </p>
+          </div>
+          <div class="event__item">
+            <img src="assets/images/whiskey-svgrepo-com.svg" alt="" />
+            <h3>Tennessee Whiskey</h3>
+            <p>You have to determine how much whiskey you can take.</p>
+          </div>
+          <div class="event__item">
+            <img src="assets/images/cowboy-hat-svgrepo-com.svg" alt="" />
+            <h3>Good Modern Country</h3>
+            <p>See Modern Country boys sing the souls of country music live.</p>
+          </div>
+          <div class="event__item">
+            <img src="assets/images/fishing-svgrepo-com.svg" alt="" />
+            <h3>Nice Hunting and Fishing</h3>
+            <p>Some country talents will be selected among attendees.</p>
+          </div>
+          <div class="event__item">
+            <img
+              src="assets/images/beer-bottle-almost-empty-svgrepo-com.svg"
+              alt=""
+            />
+            <h3>Long Neck, Ice Cold</h3>
+            <p>A time to chat and socialize while gulping that crisp taste.</p>
+          </div>
+          <div class="event__item">
+            <img
+              src="assets/images/pickup-transportation-car-transport-svgrepo-com.svg"
+              alt=""
+            />
+            <h3>Good ol' Truck</h3>
+            <p>
+              A game of who gets to sing 'My good ol' truck' after the festival.
+            </p>
+          </div>
+          <div class="event__button">
+            <button type="button">Book Honky-Tonk Fest Ticket(s)</button>
+          </div>
         </div>
-        <div class="event__item">
-          <img src="assets/images/whiskey-svgrepo-com.svg" alt="" />
-          <h3>Tennessee Whiskey</h3>
-          <p>You have to determine how much whiskey you can take.</p>
-        </div>
-        <div class="event__item">
-          <img src="assets/images/cowboy-hat-svgrepo-com.svg" alt="" />
-          <h3>Good Modern Country</h3>
-          <p>See Modern Country boys sing the souls of country music live.</p>
-        </div>
-        <div class="event__item">
-          <img src="assets/images/fishing-svgrepo-com.svg" alt="" />
-          <h3>Nice Hunting and Fishing</h3>
-          <p>Some country talents will be selected among attendees.</p>
-        </div>
-        <div class="event__item">
-          <img
-            src="assets/images/beer-bottle-almost-empty-svgrepo-com.svg"
-            alt=""
-          />
-          <h3>Long Neck, Ice Cold</h3>
-          <p>A time to chat and socialize while gulping that crisp taste.</p>
-        </div>
-        <div class="event__item">
-          <img
-            src="assets/images/pickup-transportation-car-transport-svgrepo-com.svg"
-            alt=""
-          />
-          <h3>Good ol' Truck</h3>
-          <p>
-            A game of who gets to sing 'My good ol' truck' after the festival.
-          </p>
-        </div>
-        <div class="event__button">
-          <button type="button">Book Honky-Tonk Fest Ticket(s)</button>
-        </div>
+        <p><a href="#">SEE THE WHOLE PROGRAM</a></p>
       </section>
       <section class="musicians">
         <header>
           <h2>Featured Musicians</h2>
           <hr />
         </header>
-        <div class="musicians"></div>
+        <div class="musicians__container"></div>
       </section>
       <section class="partner">
         <header>
@@ -143,9 +147,14 @@
     </main>
     <footer>
       <img src="assets/images/logo.png" alt="logo" />
-      <p class="par">
+      <p class="par" id="mobile__footer">
         2022 Honky Tonk Music Festival. <br />
         Some Right Reserved.
+      </p>
+      <p class="par" id="desktop__footer">
+        2022 Honky Tonk Music Festival. Some Right Reserved. <br />
+        The Honky-Tonk Musical Festival that touches the whole life of country
+        boys and girls.
       </p>
     </footer>
     <script src="script.js"></script>

@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileDropdown = document.querySelector('.mobile__dropdown');
 const cancelDropdown = document.querySelector('.cancel');
-const musiciansContainer = document.querySelector('.musicians');
+const musiciansContainer = document.querySelector('.musicians__container');
 
 const musicians = [
   {
@@ -52,22 +52,22 @@ cancelDropdown.addEventListener('click', () => {
   hamburger.classList.toggle('no__display');
 });
 
-musicians.forEach((MusicinaData) => {
+musicians.forEach((musicianData) => {
   const musiciansItem = document.createElement('div');
   musiciansItem.className = 'musicians__item';
   musiciansItem.innerHTML = `
   <img
-    src="${MusicinaData.musicianImage}"
+    src="${musicianData.musicianImage}"
     alt="speakers display picture"
   />
   <div class="musicians__item__desc">
-    <h3>${MusicinaData.name}</h3>
+    <h3>${musicianData.name}</h3>
     <p>
-      <i>${MusicinaData.description}</i>
+      <i>${musicianData.description}</i>
     </p>
     <hr />
     <p>
-      ${MusicinaData.fact}
+      ${musicianData.fact}
     </p>
   </div>`;
   musiciansContainer.appendChild(musiciansItem);
