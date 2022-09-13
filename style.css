@@ -400,12 +400,23 @@
     text-align: justify;
   }
 
+  .about__par {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #4f4f4f;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     padding: 1em 5em;
   }
 
+  .about__hero__container header span,
   nav .hamburger,
   #mobile__footer {
     display: none;
@@ -532,6 +543,7 @@
     margin: 0.5em 0;
   }
 
+  .about__hero__container hr,
   .musicians header hr,
   .partner header hr,
   .event header hr {
@@ -626,5 +638,29 @@
     justify-content: space-around;
     align-items: center;
     padding: 1em 0;
+  }
+
+  /* about session */
+  .about__hero__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__hero__desc {
+    margin: 1em 0;
+  }
+
+  .about__hero__desc__txt {
+    margin: 2em auto;
+    padding: 2em 4em;
+    background-color: #fff;
+    color: #4f4f4f;
+  }
+
+  .about__hero__desc .about__email a {
+    color: #4f4f4f;
+    text-decoration: underline;
+    font-weight: bolder;
   }
 }
