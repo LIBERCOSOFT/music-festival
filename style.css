@@ -435,4 +435,46 @@
     border: 3px solid #ec5242;
     background-color: #fff;
   }
+
+  .hero {
+    padding: 2em 5em;
+    background-color: #f7f7f7;
+  }
+
+  .hero header span {
+    color: #ec5242;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+  }
+
+  .hero header h1 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    color: #ec5242;
+  }
+
+  .hero .hero__desc .hero__desc__txt {
+    border: 3px solid #fff;
+    padding: 1em;
+    background-color: #f7f7f7;
+    color: #4f4f4f;
+    margin: 1em 10em 1em 0;
+  }
+
+  .hero .hero__desc h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #4f4f4f;
+  }
+
+  .hero .hero__desc .location {
+    padding: 0 0.1em;
+    color: #4f4f4f;
+    font-size: 20px;
+  }
 }
