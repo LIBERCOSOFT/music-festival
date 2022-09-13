@@ -491,6 +491,15 @@
     margin: 1em 10em 1em 0;
   }
 
+  .logo__brand h2,
+  .past__events header h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #4f4f4f;
+  }
+
   .partner header h2 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -543,6 +552,8 @@
     margin: 0.5em 0;
   }
 
+  .past__events hr,
+  .logo__brand hr,
   .about__hero__container hr,
   .musicians header hr,
   .partner header hr,
@@ -662,5 +673,53 @@
     color: #4f4f4f;
     text-decoration: underline;
     font-weight: bolder;
+  }
+
+  .logo__brand {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .past__events {
+    text-align: center;
+  }
+
+  .past__events #past__events__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .past__events .mississippi {
+    width: 350px;
+    height: 200px;
+    background-image: url('assets/images/hands-up.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em 1em 4em 0;
+    color: #fff;
+    position: relative;
+    padding-right: 1em;
+  }
+
+  .past__events .texas {
+    width: 350px;
+    height: 200px;
+    background-image: url('assets/images/hand-clapping.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2em 0 4em 1em;
+    color: #fff;
+  }
+
+  .past__events .mississippi p,
+  .past__events .mississippi h2,
+  .past__events .texas h2,
+  .past__events .texas p {
+    position: relative;
+    top: 30%;
+    padding: 0.3em 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
   }
 }
