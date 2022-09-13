@@ -51,10 +51,17 @@
   }
 
   .mobile__dropdown {
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
-    background-color: #f7f7f7;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url('assets/images/ben-white-iPyQg9QfepM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
   }
 
   .mobile__dropdown ul {
@@ -73,7 +80,10 @@
 
   .mobile__dropdown ul li a {
     text-decoration: none;
-    color: #4f4f4f;
+    color: #fff;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
   }
 
   .no__display {
