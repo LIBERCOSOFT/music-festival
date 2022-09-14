@@ -11,6 +11,11 @@
       type="text/css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="assets/images/logo_honky_tonk.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <nav>
@@ -19,7 +24,7 @@
         <div class="bar"></div>
         <div class="bar"></div>
       </div>
-      <a><img src="assets/images/logo.png" /></a>
+      <a href="index.html" id="logo"><img src="assets/images/logo.png" /></a>
       <div class="mobile__dropdown no__display">
         <div class="cancel">
           <div class="cancel__bar__1"></div>
@@ -27,13 +32,13 @@
         </div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="about.html">About</a>
           </li>
           <li>
-            <button type="button">Book Ticket(s)</button>
+            <button type="button" id="book__btn">Book Ticket(s)</button>
           </li>
         </ul>
       </div>
@@ -51,7 +56,7 @@
           <p class="hero__desc__txt par">
             The Honky Tonk Festival brings together all country music lovers -
             the hillbilly music lovers, with the aim to expressing a way to
-            celebrate glorious country heritage, culture and traditions. This
+            celebrating glorious country heritage, culture and traditions. This
             fest is meant to rejoice our special moments and emotions in our
             lives with our loved ones, be it as it may, we're all country boys
             and girls.
@@ -116,7 +121,7 @@
             <button type="button">Book Honky-Tonk Fest Ticket(s)</button>
           </div>
         </div>
-        <p><a href="#">SEE THE WHOLE PROGRAM</a></p>
+        <p id="desktop__event__btn"><a href="#">SEE THE WHOLE PROGRAM</a></p>
       </section>
       <section class="musicians">
         <header>
@@ -160,3 +165,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(252, 0, 0, 0.7)),url()  -->

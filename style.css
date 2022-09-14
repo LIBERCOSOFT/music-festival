@@ -11,8 +11,10 @@
   }
 
   .hero {
-    padding: 2em 1em 3em 1em;
-    background-color: #f7f7f7;
+    padding: 6em 1em;
+    background-image: url('assets/images/hands-up.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .par {
@@ -25,7 +27,13 @@
     text-align: justify;
   }
 
-  .cancel div,
+  .cancel div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    padding: 2px 0;
+  }
+
   nav .hamburger div {
     width: 25px;
     height: 3px;
@@ -58,24 +66,23 @@
     bottom: 0;
     z-index: 1;
     overflow: hidden;
-    background-image: url('assets/images/ben-white-iPyQg9QfepM-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.9),
+        rgba(79, 79, 79, 0.9)
+      );
   }
 
   .mobile__dropdown ul {
-    padding-top: 1em;
+    position: relative;
+    top: 40%;
+    left: 35%;
   }
 
   .mobile__dropdown ul li {
     list-style: none;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 0.1em 2em;
+    padding: 1em 0;
   }
 
   .mobile__dropdown ul li a {
@@ -84,6 +91,7 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
+    font-size: 50px;
   }
 
   .mobile__dropdown ul li button {
@@ -126,14 +134,17 @@
   .hero header h1 {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 50px;
+    margin-bottom: 0.5em;
   }
 
   .hero .hero__desc .hero__desc__txt {
     border: 3px solid #fff;
+    background-color: #4f4f4f;
     padding: 1em;
-    color: #4f4f4f;
+    margin-bottom: 0.3em;
+    color: #fff;
   }
 
   .partner header h2 {
@@ -153,6 +164,7 @@
   .past__events header h2,
   .musicians header h2 {
     padding: 1em 0 0.5em 0;
+    color: #4f4f4f;
   }
 
   .hero .hero__desc h2 {
@@ -160,17 +172,21 @@
     font-weight: bolder;
     font-size: 30px;
     padding: 0.3em 0.1em;
-    color: #4f4f4f;
+    color: #ec5242;
   }
 
   .hero .hero__desc .location {
     padding: 0 0.1em;
+    color: #fff;
   }
 
   .event {
     background-color: #242730;
     color: #fff;
     padding-bottom: 2em;
+    background-image: url('assets/images/black_pattern.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .musicians header,
@@ -197,6 +213,14 @@
     height: 0.1em;
     border: none;
     background-color: #ec5242;
+  }
+
+  #desktop__event__btn,
+  #desktop__footer,
+  #logo,
+  #book__btn,
+  .about__hero__container hr {
+    display: none;
   }
 
   .partner header hr,
@@ -261,7 +285,7 @@
   .musicians__item {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-image: url('assets/images/image_dots.svg');
+    background-image: url('assets/images/checkered_board_.png');
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
@@ -306,6 +330,7 @@
   .partner__list img {
     width: 150px;
     height: 100px;
+    margin: 0 1em;
   }
 
   footer {
@@ -316,9 +341,17 @@
   }
 
   /* About Section */
-  .about__hero__container,
+  .about__hero__container {
+    text-align: center;
+    background-image: url('assets/images/portrait_concert.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10em;
+  }
+
   .logo__brand {
     text-align: center;
+    padding: 2em 2em;
   }
 
   .about__par {
@@ -334,16 +367,17 @@
   .about__hero__desc .about__hero__desc__txt {
     background-color: #fff;
     margin-bottom: 1.5em;
+    padding: 1em;
+  }
+
+  .about__hero__desc .hero__contact__text {
+    color: #fff;
   }
 
   .about__hero__desc .about__email a {
-    color: #4f4f4f;
+    color: #fff;
     text-decoration: underline;
     font-weight: bolder;
-  }
-
-  .logo__brand {
-    padding: 2em 2em;
   }
 
   .logo__brand .logo__brand__container {
@@ -356,22 +390,30 @@
   }
 
   .past__events .mississippi {
-    width: 350px;
+    width: 320px;
     height: 200px;
-    background-image: url('assets/images/hands-up.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hands-up.webp');
     margin: 1em auto;
     color: #fff;
     position: relative;
   }
 
   .past__events .texas {
-    width: 350px;
+    width: 320px;
     height: 200px;
-    background-image: url('assets/images/hand-clapping.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hand-clapping.gif');
     margin: 1em auto;
     color: #fff;
   }
@@ -465,7 +507,9 @@
 
   .hero {
     padding: 6.5em 5em;
-    background-color: #f7f7f7;
+    background-image: url('assets/images/final-event.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hero header span {
@@ -519,19 +563,21 @@
     font-weight: 700;
     font-size: 30px;
     padding: 0.3em 0.1em;
-    color: #4f4f4f;
+    color: #ec5242;
   }
 
   .hero .hero__desc .location {
     padding: 0 0.1em;
-    color: #4f4f4f;
+    color: #fff;
     font-size: 20px;
   }
 
   .event {
-    background-color: #242730;
     color: #fff;
     padding: 5em 5em;
+    background-image: url('assets/images/guitar_background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .event header,
@@ -552,9 +598,15 @@
     margin: 0.5em 0;
   }
 
+  .logo__brand hr {
+    height: 0.2em;
+    border: none;
+    background-color: #f1f1f1;
+  }
+
   .past__events hr,
-  .logo__brand hr,
   .about__hero__container hr,
+  .logo__brand header hr,
   .musicians header hr,
   .partner header hr,
   .event header hr {
@@ -567,15 +619,17 @@
 
   #event__items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .event .event__item {
-    width: 14em;
+    width: 12.2em;
     text-align: center;
-    background-color: #3c3f46;
+    background-color: rgba(60, 63, 70, 0.7);
     padding: 2em;
     margin: 0 0.1em;
-    border: 2px solid #3c3f46;
+    border: 2px solid transparent;
   }
 
   .event .event__item:hover {
@@ -611,7 +665,7 @@
   .musicians__item {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-image: url('assets/images/image_dots.svg');
+    background-image: url('assets/images/checkered_board_.png');
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
@@ -656,6 +710,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-image: url('assets/images/drum-baner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .about__hero__desc {
@@ -670,9 +727,13 @@
   }
 
   .about__hero__desc .about__email a {
-    color: #4f4f4f;
+    color: #fff;
     text-decoration: underline;
     font-weight: bolder;
+  }
+
+  .about__hero__desc .hero__contact__text {
+    color: #fff;
   }
 
   .logo__brand {
@@ -692,9 +753,13 @@
   .past__events .mississippi {
     width: 350px;
     height: 200px;
-    background-image: url('assets/images/hands-up.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hands-up.webp');
     margin: 2em 1em 4em 0;
     color: #fff;
     position: relative;
@@ -704,9 +769,13 @@
   .past__events .texas {
     width: 350px;
     height: 200px;
-    background-image: url('assets/images/hand-clapping.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hand-clapping.gif');
     margin: 2em 0 4em 1em;
     color: #fff;
   }

@@ -7,13 +7,13 @@ const musicians = [
   {
     name: 'Dolly Parton',
     description: 'American singer-songwriter, actress, philanthropist, and businesswoman',
-    musicianImage: 'assets/images/dolly',
+    musicianImage: 'assets/images/dolly.png',
     fact: 'After achieving success as a songwriter for others, Parton made her album debut in 1967, which led to success during the 1970s and continued into the 1980s.',
   },
   {
     name: 'Chris Stapleton',
     description: 'American singer-songwriter, guitarist, and record producer',
-    musicianImage: 'assets/images/Chris_Stapleton.jpg',
+    musicianImage: 'assets/images/Chris_Stapleton.png',
     fact: 'Stapleton moved to Nashville, Tennessee, to pursue an engineering degree from Vanderbilt University but dropped out to pursue his career in music. Subsequently, Stapleton signed a contract with Sea Gayle Music to write and publish his music.',
   },
   {
@@ -31,7 +31,7 @@ const musicians = [
   {
     name: 'Kane Brown',
     description: 'American singer',
-    musicianImage: 'assets/images/Kane_Brown.jpg',
+    musicianImage: 'assets/images/Kane_Brown.png',
     fact: ' Brown first came to the attention of the public through social media. After Brown signed with RCA Nashville in early 2016, released in March 2016.Brown became the first artist to have simultaneous number ones on all five main Billboard country charts.',
   },
   {
@@ -58,7 +58,7 @@ musicians.forEach((musicianData) => {
   musiciansItem.innerHTML = `
   <img
     src="${musicianData.musicianImage}"
-    alt="speakers display picture"
+    alt="artist display picture"
   />
   <div class="musicians__item__desc">
     <h3>${musicianData.name}</h3>
