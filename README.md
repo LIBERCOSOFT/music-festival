@@ -4,7 +4,7 @@
 
 - If you like it please give it a Star⭐️, also you can follow:wink:
 
-<!-- > ![](assets/img/project-screenshot.png) -->
+> ![](assets/images/honky__screenshot.png)
 
 ## Built With
 
@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-<!-- - https://libercosoft.github.io/libercosoft-portfolio/ -->
+- https://libercosoft.github.io/music-festival/
 
 ## Getting Started
 
