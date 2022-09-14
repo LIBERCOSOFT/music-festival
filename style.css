@@ -467,6 +467,7 @@
   nav img {
     width: 120px;
     height: 40px;
+    padding-top: 0.5em;
   }
 
   .mobile__dropdown ul {
