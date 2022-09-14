@@ -506,6 +506,12 @@
     background-color: #fff;
   }
 
+  .mobile__dropdown ul li button:hover {
+    border: 3px solid #fff;
+    background-color: #ec5242;
+    color: #fff;
+  }
+
   .hero {
     padding: 6.5em 5em;
     background-image: url('assets/images/final-event.jpg');
