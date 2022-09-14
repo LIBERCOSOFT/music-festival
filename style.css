@@ -10,6 +10,10 @@
     background-color: #f7f7f7;
   }
 
+  #page__indicator {
+    color: #ec5242;
+  }
+
   .hero {
     padding: 6em 1em;
     background-image: url('assets/images/hands-up.webp');
@@ -440,6 +444,10 @@
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: justify;
+  }
+
+  #page__indicator {
+    color: #ec5242;
   }
 
   .about__par {
