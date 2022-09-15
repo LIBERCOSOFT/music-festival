@@ -3,3 +3,874 @@
   padding: 0;
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 1em;
+    background-color: #f7f7f7;
+  }
+
+  #page__indicator {
+    color: #ec5242;
+  }
+
+  .hero {
+    padding: 6em 1em;
+    background-image: url('assets/images/main_big.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .par {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: justify;
+  }
+
+  .cancel div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    padding: 2px 0;
+  }
+
+  nav .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #4f4f4f;
+    padding: 2px 0;
+    border: 1px solid #fff;
+  }
+
+  nav .hamburger:active .bar:nth-child(1) {
+    opacity: 0;
+  }
+
+  nav .hamburger:active .bar:nth-child(2) {
+    transform: translateY(3px) rotate(-45deg);
+    transition: transform 0.1s ease-in-out;
+    border: none;
+  }
+
+  nav .hamburger:active .bar:nth-child(3) {
+    transform: translateY(-1px) rotate(46deg);
+    transition: transform 0.1s ease-in-out;
+    border: none;
+  }
+
+  .mobile__dropdown {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.9),
+        rgba(79, 79, 79, 0.9)
+      );
+  }
+
+  .mobile__dropdown ul {
+    position: relative;
+    top: 20%;
+    left: 30%;
+  }
+
+  .mobile__dropdown ul li {
+    list-style: none;
+    padding: 1em 0;
+  }
+
+  .mobile__dropdown ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .mobile__dropdown ul li button {
+    padding: 1em;
+    color: #ec5242;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    border: 3px solid #ec5242;
+    background-color: #fff;
+  }
+
+  .no__display {
+    display: none;
+  }
+
+  .cancel .cancel__bar__1 {
+    transform: translateY(3px) rotate(-45deg);
+    border: none;
+  }
+
+  .cancel .cancel__bar__2 {
+    transform: translateY(-1px) rotate(46deg);
+    border: none;
+  }
+
+  .cancel {
+    float: right;
+    padding: 1em 0.5em 0 0;
+  }
+
+  .visibility {
+    display: block;
+  }
+
+  .hero header {
+    color: #ec5242;
+  }
+
+  .hero header h1 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 0.5em;
+  }
+
+  .hero .hero__desc .hero__desc__txt {
+    border: 3px solid #fff;
+    background-color: #4f4f4f;
+    padding: 1em;
+    margin-bottom: 0.3em;
+    color: #fff;
+  }
+
+  .partner header h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .event header h2 {
+    padding: 1em 0 0.5em 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .logo__brand header h2,
+  .past__events header h2,
+  .musicians header h2 {
+    padding: 1em 0 0.5em 0;
+    color: #4f4f4f;
+  }
+
+  .hero .hero__desc h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #4f4f4f;
+  }
+
+  .hero .hero__desc .location {
+    padding: 0 0.1em;
+    color: #4f4f4f;
+  }
+
+  .event {
+    color: #fff;
+    padding-bottom: 2em;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.95),
+        rgba(79, 79, 79, 0.95)
+      ),
+      url('assets/images/pattern_bg.png');
+    background-repeat: repeat;
+  }
+
+  .musicians header,
+  .event header {
+    text-align: center;
+  }
+
+  .musicians__item__desc {
+    padding-left: 0.5em;
+  }
+
+  .musicians__item__desc hr {
+    width: 10%;
+    height: 0.1em;
+    border: none;
+    background-color: #ec5242;
+    margin: 0.5em 0;
+  }
+
+  .logo__brand hr,
+  .past__events hr {
+    width: 10%;
+    margin: 1em auto;
+    height: 0.1em;
+    border: none;
+    background-color: #ec5242;
+  }
+
+  #desktop__event__btn,
+  #desktop__footer,
+  #about__footer__txt,
+  #logo,
+  #book__btn,
+  .sub__nav,
+  .about__hero__container hr {
+    display: none;
+  }
+
+  .partner header hr,
+  .musicians header hr,
+  .event header hr {
+    width: 10%;
+    margin: 0 auto;
+    height: 0.1em;
+    border: none;
+    background-color: #ec5242;
+  }
+
+  .event .event__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    margin: 1em;
+    padding: 1em 0.5em;
+    background-color: #4f4f4f;
+  }
+
+  .musicians__item p i {
+    color: #ec5242;
+    padding-top: 0.5em;
+  }
+
+  .event .event__item i {
+    font-size: 100%;
+    padding: 0 0.5em;
+    border: 1px solid yellow;
+  }
+
+  .event .event__item h3 {
+    color: #ec5242;
+    padding: 0 0.3em 0 0.8em;
+  }
+
+  .event .event__button {
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .event .event__button button {
+    padding: 2em;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #ec5242;
+    color: #fff;
+    border: none;
+  }
+
+  .event .event__button button:hover {
+    background-color: #fff;
+    color: #ec5242;
+  }
+
+  .musicians {
+    padding: 1em 0.9em;
+  }
+
+  .musicians__item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-image: url('assets/images/checkered_board_.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 40px;
+    margin: 2em 0;
+  }
+
+  footer img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .musicians__item img {
+    width: 120px;
+    height: 120px;
+    margin: 12px 0 0 12px;
+  }
+
+  footer p {
+    color: #4f4f4f;
+  }
+
+  .musicians__item p {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+  }
+
+  .partner {
+    background-color: #4f4f4f;
+    padding: 2em 0;
+  }
+
+  .partner__list {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .partner__list img {
+    width: 100px;
+    height: 100px;
+    margin: 0 1em;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+  }
+
+  /* About Section */
+  .about__hero__container {
+    text-align: center;
+    background-image: url('assets/images/about_bg_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10em;
+  }
+
+  .logo__brand {
+    text-align: center;
+    padding: 2em 2em;
+  }
+
+  .about__par {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #4f4f4f;
+  }
+
+  .about__hero__desc .about__hero__desc__txt {
+    background-color: #fff;
+    margin-bottom: 1.5em;
+    padding: 1em;
+  }
+
+  .about__hero__desc .hero__contact__text {
+    background-color: #fff;
+    padding: 0 1em;
+  }
+
+  .past__events .past__events__txt {
+    padding: 0 2em;
+  }
+
+  .about__email {
+    background-color: #fff;
+  }
+
+  .about__hero__desc .about__email a {
+    color: #4f4f4f;
+    text-decoration: underline;
+    font-weight: bolder;
+    padding-bottom: 1em;
+  }
+
+  .logo__brand .logo__brand__container {
+    border: 2px solid #f1f1f1;
+    margin: 2em 0;
+  }
+
+  .past__events {
+    text-align: center;
+  }
+
+  .past__events .mississippi {
+    width: 320px;
+    height: 200px;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hands-up.webp');
+    margin: 1em auto;
+    color: #fff;
+    position: relative;
+  }
+
+  .past__events .texas {
+    width: 320px;
+    height: 200px;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hand-clapping.gif');
+    margin: 1em auto;
+    color: #fff;
+  }
+
+  .past__events .mississippi p,
+  .past__events .mississippi h2,
+  .past__events .texas h2,
+  .past__events .texas p {
+    position: relative;
+    top: 30%;
+    padding: 0.3em 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sub__nav {
+    background-color: #4f4f4f;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    padding: 0 6em;
+  }
+
+  .sub__nav > * {
+    padding: 0.5em 1em;
+  }
+
+  .sub__nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .par {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    text-align: justify;
+  }
+
+  #page__indicator {
+    color: #ec5242;
+  }
+
+  .about__par {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #4f4f4f;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
+  }
+
+  .about__hero__container header span,
+  nav .hamburger,
+  #mobile__footer,
+  #about__partner {
+    display: none;
+  }
+
+  nav img {
+    width: 120px;
+    height: 40px;
+    padding-top: 0.5em;
+  }
+
+  .mobile__dropdown ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile__dropdown ul li {
+    list-style: none;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 0.1em 2em;
+  }
+
+  .event a {
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  .mobile__dropdown ul li a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  .sub__nav a:hover {
+    color: #ec5242;
+    cursor: pointer;
+  }
+
+  .about__hero__desc .about__email {
+    background-color: #fff;
+  }
+
+  .about__hero__desc .about__email a {
+    color: #4f4f4f;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  .mobile__dropdown ul li a:hover {
+    color: #ec5242;
+  }
+
+  .mobile__dropdown ul li button {
+    padding: 1em;
+    color: #ec5242;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    border: 3px solid #ec5242;
+    background-color: #fff;
+  }
+
+  .mobile__dropdown ul li button:hover {
+    border: 3px solid #fff;
+    background-color: #ec5242;
+    color: #fff;
+  }
+
+  .hero {
+    padding: 6.5em 5em;
+    background-image: url('assets/images/main_big.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero header span {
+    color: #ec5242;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 40px;
+  }
+
+  .hero header h1 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    color: #ec5242;
+  }
+
+  .hero .hero__desc .hero__desc__txt {
+    border: 3px solid #fff;
+    padding: 1em;
+    background-color: #f7f7f7;
+    color: #4f4f4f;
+    margin: 1em 10em 1em 0;
+  }
+
+  .logo__brand h2,
+  .past__events header h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #4f4f4f;
+  }
+
+  .partner header h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #fff;
+    text-align: center;
+  }
+
+  .musicians {
+    padding: 3em 0;
+  }
+
+  .musicians header h2,
+  .hero .hero__desc h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #4f4f4f;
+  }
+
+  .hero .hero__desc .location {
+    padding: 0 0.1em;
+    color: #4f4f4f;
+    font-size: 20px;
+  }
+
+  .event {
+    color: #fff;
+    padding: 5em 5em;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.95),
+        rgba(79, 79, 79, 0.95)
+      ),
+      url('assets/images/pattern_bg.png');
+    background-repeat: repeat;
+  }
+
+  .event header,
+  .musicians header {
+    text-align: center;
+  }
+
+  .event > p {
+    text-align: center;
+    margin: 5em 0;
+  }
+
+  .musicians__item__desc hr {
+    width: 10%;
+    height: 0.1em;
+    border: none;
+    background-color: #ec5242;
+    margin: 0.5em 0;
+  }
+
+  .logo__brand hr {
+    height: 0.2em;
+    border: none;
+    background-color: #f1f1f1;
+  }
+
+  .past__events hr,
+  .about__hero__container hr,
+  .logo__brand header hr,
+  .musicians header hr,
+  .partner header hr,
+  .event header hr {
+    width: 5%;
+    margin: 1em auto;
+    height: 0.2em;
+    border: none;
+    background-color: #ec5242;
+  }
+
+  #event__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .event .event__item {
+    text-align: center;
+    background-color: rgba(60, 63, 70, 0.7);
+    padding: 2em;
+    margin: 0 0.1em;
+    border: 2px solid transparent;
+  }
+
+  .event .event__item:hover {
+    border: 2px solid #fff;
+  }
+
+  .event .event__item h3 {
+    color: #ec5242;
+    padding: 1em 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .event .event__button {
+    display: none;
+  }
+
+  footer img {
+    height: 120px;
+  }
+
+  .musicians__item img {
+    width: 150px;
+    height: 150px;
+    margin: 12px 0 0 12px;
+  }
+
+  .musicians__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 5em;
+  }
+
+  .musicians__item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-image: url('assets/images/checkered_board_.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 40px;
+    margin: 2em 1em;
+  }
+
+  .musicians__item p i {
+    color: #ec5242;
+    padding-top: 0.5em;
+  }
+
+  .musicians__item__desc {
+    padding: 1em 0 0 1em;
+  }
+
+  .partner {
+    background-color: #4f4f4f;
+    padding: 2em 0;
+  }
+
+  .partner__list {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .partner__list img {
+    width: 100px;
+    height: 50px;
+    margin: 0 2em;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  /* about session */
+  .about__hero__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('assets/images/about_bg_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about__hero__desc {
+    margin: 1em 0;
+  }
+
+  .about__hero__desc__txt {
+    margin: 2em auto;
+    padding: 2em 4em;
+    background-color: #fff;
+    color: #4f4f4f;
+  }
+
+  .about__hero__desc .hero__contact__text {
+    background-color: #fff;
+    color: #4f4f4f;
+  }
+
+  .logo__brand {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  .past__events {
+    text-align: center;
+  }
+
+  .past__events #past__events__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .past__events .mississippi {
+    width: 350px;
+    height: 200px;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hands-up.webp');
+    margin: 2em 1em 4em 0;
+    color: #fff;
+    position: relative;
+    padding-right: 1em;
+  }
+
+  .past__events .texas {
+    width: 350px;
+    height: 200px;
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.7),
+        rgba(252, 0, 0, 0.7)
+      ),
+      url('assets/images/hand-clapping.gif');
+    margin: 2em 0 4em 1em;
+    color: #fff;
+  }
+
+  .past__events .mississippi p,
+  .past__events .mississippi h2,
+  .past__events .texas h2,
+  .past__events .texas p {
+    position: relative;
+    top: 30%;
+    padding: 0.3em 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .about__footer {
+    background-color: #4f4f4f;
+  }
+
+  #desktop__footer {
+    color: #4f4f4f;
+  }
+
+  #about__footer__txt {
+    color: #fff;
+  }
+}

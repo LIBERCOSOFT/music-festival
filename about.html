@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Honky Tonk Music Fest</title>
+    <title>About - Honky Tonk Music Fest</title>
     <link
       href="http://fonts.googleapis.com/css?family=Lato:400,700"
       rel="stylesheet"
@@ -21,13 +21,14 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <div class="sub__nav">
       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a>Logout</a>
-      <a>Mypage</a>
-      <a>Korean</a>
+      <a href="#">Logout</a>
+      <a href="#">Mypage</a>
+      <a href="#">Korean</a>
     </div>
     <nav>
       <div class="hamburger">
@@ -45,19 +46,16 @@
         </div>
         <ul>
           <li>
-            <a href="index.html" id="page__indicator">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="about.html" id="page__indicator">About</a>
           </li>
           <li>
-            <a class="cancel__menu" href="#events">Events</a>
+            <a class="cancel__menu" href="#logo__creation">Logo Creation</a>
           </li>
           <li>
-            <a class="cancel__menu" href="#musicians">Features</a>
-          </li>
-          <li>
-            <a class="cancel__menu" href="#partners">Partners</a>
+            <a class="cancel__menu" href="#past__events">Past Events</a>
           </li>
           <li>
             <button type="button" id="book__btn">Book Ticket(s)</button>
@@ -66,93 +64,70 @@
       </div>
     </nav>
     <main>
-      <section class="hero">
+      <section class="hero about__hero__container">
         <header>
           <span class="par">"Hello! Hillbilly Music Lovers"</span>
           <h1>
-            Honky Tonk Music<br />
+            Honky Tonk Music <br />
             Festival 2022
           </h1>
         </header>
-        <div class="hero__desc">
-          <p class="hero__desc__txt par">
+        <hr />
+        <div class="hero__desc about__hero__desc">
+          <p class="about__par about__hero__desc__txt">
             The Honky Tonk Festival brings together all country music lovers -
             the hillbilly music lovers, with the aim to expressing a way to
-            celebrating glorious country heritage, culture and traditions. This
+            celebrate glorious country heritage, culture and traditions. This
             fest is meant to rejoice our special moments and emotions in our
             lives with our loved ones, be it as it may, we're all country boys
             and girls.
           </p>
-          <h2>2022.11.11(FRI) ~ 12(SAT)</h2>
-          <p class="location par">
-            @ Ryman Auditorium, Nashville, Tennessee and more
+          <p class="about__par hero__contact__text">
+            Please contact us per Email for any further questions about Honky
+            Tonk Music Festival!
+          </p>
+          <p class="about__par about__email">
+            <a href="mailto:honkytonk22@music.concert"
+              >honkytonk22@music.concert</a
+            >
           </p>
         </div>
       </section>
-      <section class="event" id="events">
+      <section class="logo__brand" id="logo__creation">
         <header>
-          <h2>Main Events</h2>
+          <h2>Honky Tonk Music Festival 2022 Logo</h2>
           <hr />
         </header>
-        <div id="event__items">
-          <div class="event__item">
-            <img
-              src="assets/images/cowboy-hat-with-moustache-svgrepo-com.svg"
-              alt=""
-            />
-            <h3>Old Country and Western</h3>
-            <p>
-              Listen to some good old, vintage, and classic country musicians
-              play
-            </p>
+        <p class="about__par">
+          The logo of Honky Tonk Music Fest '22 was decided by a heart and soul
+          of a hillbilly lover.
+        </p>
+        <div class="logo__brand__container">
+          <img src="assets/images/logo.png" alt="honky-tonk logo" />
+        </div>
+        <hr />
+      </section>
+      <section class="past__events" id="past__events">
+        <header>
+          <h2>See the past Honky Tonk Musical Festivals</h2>
+        </header>
+        <hr />
+        <p class="about__par past__events__txt">
+          Take a look at the last two Honky Tonk Musical Festival which took
+          place in Mississippi and Texas.
+        </p>
+        <div id="past__events__list">
+          <div class="mississippi">
+            <h2>2021</h2>
+            <p>Honky-Tonk Fest '21 in Mississippi</p>
           </div>
-          <div class="event__item">
-            <img src="assets/images/whiskey-svgrepo-com.svg" alt="" />
-            <h3>Tennessee Whiskey</h3>
-            <p>You have to determine how much whiskey you can take.</p>
-          </div>
-          <div class="event__item">
-            <img src="assets/images/cowboy-hat-svgrepo-com.svg" alt="" />
-            <h3>Good Modern Country</h3>
-            <p>See Modern Country boys sing the souls of country music live.</p>
-          </div>
-          <div class="event__item">
-            <img src="assets/images/fishing-svgrepo-com.svg" alt="" />
-            <h3>Nice Hunting and Fishing</h3>
-            <p>Some country talents will be selected among attendees.</p>
-          </div>
-          <div class="event__item">
-            <img
-              src="assets/images/beer-bottle-almost-empty-svgrepo-com.svg"
-              alt=""
-            />
-            <h3>Long Neck, Ice Cold</h3>
-            <p>A time to chat and socialize while gulping that crisp taste.</p>
-          </div>
-          <div class="event__item">
-            <img
-              src="assets/images/pickup-transportation-car-transport-svgrepo-com.svg"
-              alt=""
-            />
-            <h3>Good ol' Truck</h3>
-            <p>
-              A game of who gets to sing 'My good ol' truck' after the festival.
-            </p>
-          </div>
-          <div class="event__button">
-            <button type="button">Book Honky-Tonk Fest Ticket(s)</button>
+          <div class="texas">
+            <h2>2020</h2>
+            <p>Honky-Tonk Fest '20 in Texas</p>
           </div>
         </div>
-        <p id="desktop__event__btn"><a href="#">SEE THE WHOLE PROGRAM</a></p>
       </section>
-      <section class="musicians" id="musicians">
-        <header>
-          <h2>Featured Musicians</h2>
-          <hr />
-        </header>
-        <div class="musicians__container"></div>
-      </section>
-      <section class="partner" id="partners">
+      <section class="partner" id="about__partner">
         <header>
           <h2>Partner</h2>
           <hr />
@@ -172,13 +147,13 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="about__footer">
       <img src="assets/images/logo.png" alt="logo" />
       <p id="mobile__footer">
         2022 Honky Tonk Music Festival. <br />
         Some Right Reserved.
       </p>
-      <p class="par" id="desktop__footer">
+      <p class="par" id="about__footer__txt">
         2022 Honky Tonk Music Festival. Some Right Reserved. <br />
         The Honky-Tonk Musical Festival that touches the whole life of country
         boys and girls.
@@ -187,5 +162,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(252, 0, 0, 0.7)),url()  -->

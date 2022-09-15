@@ -1,9 +1,10 @@
 # Honky Tonk Music Festival
 
-> A country music festival ticketting and landing page
-> If you like it please give it a Star⭐️, also you can follow:wink:
+> A country music festival ticketting and landing page,
 
-<!-- > ![](assets/img/project-screenshot.png) -->
+- If you like it please give it a Star⭐️, also you can follow:wink:
+
+> ![](assets/images/honky__screenshot.png)
 
 ## Built With
 
@@ -13,7 +14,7 @@
 
 ## Live Demo (if available)
 
-<!-- - https://libercosoft.github.io/libercosoft-portfolio/ -->
+- https://libercosoft.github.io/music-festival/
 
 ## Getting Started
 
@@ -33,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Open your Terminal/Powershell or any command line interface you use, then navigate to your created above directory or the directory you'll like to clone this project directory
 - Type `git clone https://github.com/LIBERCOSOFT/honky-tonk-music-fest.git` if your're using https with git or `git clone git@github.com:LIBERCOSOFT/honky-tonk-music-fest.git` if your preferred is ssh and hit enter
-- Navigate to the `libercosoft-portfolio` directory on your local computer in your above chosen directory and open the `index.html` file
+- Navigate to the `music-festival` directory on your local computer in your above chosen directory and open the `index.html` file
 
 ### Usage
 
@@ -57,4 +58,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
+- [Cindy Shin](https://www.behance.net/adagio07)
+- [Microverse](https://www.microverse.org/)
+- [CC Global Summit 2015](http://summit.cckorea.org/main.html)
