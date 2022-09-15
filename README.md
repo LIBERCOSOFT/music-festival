@@ -58,4 +58,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
+- [Cindy Shin](https://www.behance.net/adagio07)
+- [Microverse](https://www.microverse.org/)
+- [CC Global Summit 2015](http://summit.cckorea.org/main.html)

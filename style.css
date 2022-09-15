@@ -20,7 +20,7 @@ html {
 
   .hero {
     padding: 6em 1em;
-    background-image: url('assets/images/hands-up.webp');
+    background-image: url('assets/images/main_big.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -180,7 +180,7 @@ html {
     font-weight: bolder;
     font-size: 30px;
     padding: 0.3em 0.1em;
-    color: #ec5242;
+    color: #4f4f4f;
   }
 
   .hero .hero__desc .location {
@@ -189,12 +189,16 @@ html {
   }
 
   .event {
-    background-color: #242730;
     color: #fff;
     padding-bottom: 2em;
-    background-image: url('assets/images/black_pattern.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.95),
+        rgba(79, 79, 79, 0.95)
+      ),
+      url('assets/images/pattern_bg.png');
+    background-repeat: repeat;
   }
 
   .musicians header,
@@ -225,6 +229,7 @@ html {
 
   #desktop__event__btn,
   #desktop__footer,
+  #about__footer__txt,
   #logo,
   #book__btn,
   .sub__nav,
@@ -337,7 +342,7 @@ html {
   }
 
   .partner__list img {
-    width: 150px;
+    width: 100px;
     height: 100px;
     margin: 0 1em;
   }
@@ -346,13 +351,13 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1em 0;
+    padding: 1em;
   }
 
   /* About Section */
   .about__hero__container {
     text-align: center;
-    background-image: url('assets/images/portrait_concert.jpeg');
+    background-image: url('assets/images/about_bg_01.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10em;
@@ -380,13 +385,23 @@ html {
   }
 
   .about__hero__desc .hero__contact__text {
-    color: #fff;
+    background-color: #fff;
+    padding: 0 1em;
+  }
+
+  .past__events .past__events__txt {
+    padding: 0 2em;
+  }
+
+  .about__email {
+    background-color: #fff;
   }
 
   .about__hero__desc .about__email a {
-    color: #fff;
+    color: #4f4f4f;
     text-decoration: underline;
     font-weight: bolder;
+    padding-bottom: 1em;
   }
 
   .logo__brand .logo__brand__container {
@@ -490,7 +505,8 @@ html {
 
   .about__hero__container header span,
   nav .hamburger,
-  #mobile__footer {
+  #mobile__footer,
+  #about__partner {
     display: none;
   }
 
@@ -531,8 +547,12 @@ html {
     cursor: pointer;
   }
 
+  .about__hero__desc .about__email {
+    background-color: #fff;
+  }
+
   .about__hero__desc .about__email a {
-    color: #fff;
+    color: #4f4f4f;
     text-decoration: underline;
     font-weight: bolder;
   }
@@ -559,7 +579,7 @@ html {
 
   .hero {
     padding: 6.5em 5em;
-    background-image: url('assets/images/final-event.jpg');
+    background-image: url('assets/images/main_big.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -615,21 +635,26 @@ html {
     font-weight: 700;
     font-size: 30px;
     padding: 0.3em 0.1em;
-    color: #ec5242;
+    color: #4f4f4f;
   }
 
   .hero .hero__desc .location {
     padding: 0 0.1em;
-    color: #fff;
+    color: #4f4f4f;
     font-size: 20px;
   }
 
   .event {
     color: #fff;
     padding: 5em 5em;
-    background-image: url('assets/images/guitar_background.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.95),
+        rgba(79, 79, 79, 0.95)
+      ),
+      url('assets/images/pattern_bg.png');
+    background-repeat: repeat;
   }
 
   .event header,
@@ -670,13 +695,11 @@ html {
   }
 
   #event__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .event .event__item {
-    width: 12.2em;
     text-align: center;
     background-color: rgba(60, 63, 70, 0.7);
     padding: 2em;
@@ -745,8 +768,8 @@ html {
   }
 
   .partner__list img {
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
     margin: 0 2em;
   }
 
@@ -762,7 +785,7 @@ html {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url('assets/images/drum-baner.jpg');
+    background-image: url('assets/images/about_bg_01.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -779,7 +802,8 @@ html {
   }
 
   .about__hero__desc .hero__contact__text {
-    color: #fff;
+    background-color: #fff;
+    color: #4f4f4f;
   }
 
   .logo__brand {
@@ -840,5 +864,13 @@ html {
 
   .about__footer {
     background-color: #4f4f4f;
+  }
+
+  #desktop__footer {
+    color: #4f4f4f;
+  }
+
+  #about__footer__txt {
+    color: #fff;
   }
 }
