@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileDropdown = document.querySelector('.mobile__dropdown');
 const cancelDropdown = document.querySelector('.cancel');
+const cancelMenu = document.querySelectorAll('.cancel__menu');
 const musiciansContainer = document.querySelector('.musicians__container');
 
 const musicians = [
@@ -45,6 +46,13 @@ const musicians = [
 hamburger.addEventListener('click', () => {
   mobileDropdown.classList.toggle('visibility');
   hamburger.classList.toggle('no__display');
+});
+
+cancelMenu.forEach((element) => {
+  element.addEventListener('click', () => {
+    mobileDropdown.classList.remove('visibility');
+    hamburger.classList.remove('no__display');
+  });
 });
 
 cancelDropdown.addEventListener('click', () => {

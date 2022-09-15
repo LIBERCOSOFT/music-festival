@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     padding: 1em;
@@ -80,8 +84,8 @@
 
   .mobile__dropdown ul {
     position: relative;
-    top: 40%;
-    left: 35%;
+    top: 20%;
+    left: 30%;
   }
 
   .mobile__dropdown ul li {
@@ -95,7 +99,7 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .mobile__dropdown ul li button {
@@ -223,6 +227,7 @@
   #desktop__footer,
   #logo,
   #book__btn,
+  .sub__nav,
   .about__hero__container hr {
     display: none;
   }
@@ -436,6 +441,23 @@
 }
 
 @media screen and (min-width: 769px) {
+  .sub__nav {
+    background-color: #4f4f4f;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    padding: 0 6em;
+  }
+
+  .sub__nav > * {
+    padding: 0.5em 1em;
+  }
+
+  .sub__nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+
   .par {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -502,6 +524,21 @@
     color: #4f4f4f;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-style: normal;
+  }
+
+  .sub__nav a:hover {
+    color: #ec5242;
+    cursor: pointer;
+  }
+
+  .about__hero__desc .about__email a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  .mobile__dropdown ul li a:hover {
+    color: #ec5242;
   }
 
   .mobile__dropdown ul li button {
@@ -741,12 +778,6 @@
     color: #4f4f4f;
   }
 
-  .about__hero__desc .about__email a {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: bolder;
-  }
-
   .about__hero__desc .hero__contact__text {
     color: #fff;
   }
@@ -805,5 +836,9 @@
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 800;
+  }
+
+  .about__footer {
+    background-color: #4f4f4f;
   }
 }

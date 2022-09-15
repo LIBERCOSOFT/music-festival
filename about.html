@@ -16,9 +16,20 @@
       href="assets/images/logo_honky_tonk.png"
       type="image/x-icon"
     />
+    <script
+      src="https://kit.fontawesome.com/97bb250fba.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
+    <div class="sub__nav">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#">Logout</a>
+      <a href="#">Mypage</a>
+      <a href="#">Korean</a>
+    </div>
     <nav>
       <div class="hamburger">
         <div class="bar"></div>
@@ -39,6 +50,12 @@
           </li>
           <li>
             <a href="about.html" id="page__indicator">About</a>
+          </li>
+          <li>
+            <a class="cancel__menu" href="#logo__creation">Logo Creation</a>
+          </li>
+          <li>
+            <a class="cancel__menu" href="#past__events">Past Events</a>
           </li>
           <li>
             <button type="button" id="book__btn">Book Ticket(s)</button>
@@ -76,7 +93,7 @@
           </p>
         </div>
       </section>
-      <section class="logo__brand">
+      <section class="logo__brand" id="logo__creation">
         <header>
           <h2>Honky Tonk Music Festival 2022 Logo</h2>
           <hr />
@@ -90,7 +107,7 @@
         </div>
         <hr />
       </section>
-      <section class="past__events">
+      <section class="past__events" id="past__events">
         <header>
           <h2>See the past Honky Tonk Musical Festivals</h2>
         </header>
@@ -130,9 +147,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="about__footer">
       <img src="assets/images/logo.png" alt="logo" />
-      <p class="par" id="mobile__footer">
+      <p id="mobile__footer">
         2022 Honky Tonk Music Festival. <br />
         Some Right Reserved.
       </p>
