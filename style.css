@@ -8,31 +8,72 @@ html {
   scroll-behavior: smooth;
 }
 
+#page__indicator {
+  color: #ec5242;
+}
+
+.hero {
+  padding: 6.5em 5em;
+  background-image: url('assets/images/main_big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.par {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: justify;
+}
+
+.past__events .mississippi p,
+.past__events .mississippi h2,
+.past__events .texas h2,
+.past__events .texas p {
+  position: relative;
+  top: 30%;
+  padding: 0.3em 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.past__events .mississippi {
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.7),
+      rgba(252, 0, 0, 0.7)
+    ),
+    url('assets/images/hands-up.webp');
+  color: #fff;
+  position: relative;
+}
+
+.past__events .texas {
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.7),
+      rgba(252, 0, 0, 0.7)
+    ),
+    url('assets/images/hand-clapping.gif');
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .main__nav {
     padding: 1em;
     background-color: #f7f7f7;
-  }
-
-  #page__indicator {
-    color: #ec5242;
-  }
-
-  .hero {
-    padding: 6em 1em;
-    background-image: url('assets/images/main_big.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .par {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.01em;
-    text-align: justify;
   }
 
   .cancel div {
@@ -348,9 +389,6 @@ html {
   }
 
   footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 1em;
   }
 
@@ -416,42 +454,13 @@ html {
   .past__events .mississippi {
     width: 320px;
     height: 200px;
-    background:
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 0.7),
-        rgba(252, 0, 0, 0.7)
-      ),
-      url('assets/images/hands-up.webp');
     margin: 1em auto;
-    color: #fff;
-    position: relative;
   }
 
   .past__events .texas {
     width: 320px;
     height: 200px;
-    background:
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 0.7),
-        rgba(252, 0, 0, 0.7)
-      ),
-      url('assets/images/hand-clapping.gif');
     margin: 1em auto;
-    color: #fff;
-  }
-
-  .past__events .mississippi p,
-  .past__events .mississippi h2,
-  .past__events .texas h2,
-  .past__events .texas p {
-    position: relative;
-    top: 30%;
-    padding: 0.3em 0;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 800;
   }
 }
 
@@ -472,20 +481,6 @@ html {
   .sub__nav a {
     text-decoration: none;
     color: #fff;
-  }
-
-  .par {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.01em;
-    text-align: justify;
-  }
-
-  #page__indicator {
-    color: #ec5242;
   }
 
   .about__par {
@@ -580,13 +575,6 @@ html {
     border: 3px solid #fff;
     background-color: #ec5242;
     color: #fff;
-  }
-
-  .hero {
-    padding: 6.5em 5em;
-    background-image: url('assets/images/main_big.png');
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .hero header span {
@@ -775,9 +763,6 @@ html {
   }
 
   footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 1em 0;
   }
 
@@ -824,43 +809,14 @@ html {
   .past__events .mississippi {
     width: 350px;
     height: 200px;
-    background:
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 0.7),
-        rgba(252, 0, 0, 0.7)
-      ),
-      url('assets/images/hands-up.webp');
     margin: 2em 1em 4em 0;
-    color: #fff;
-    position: relative;
     padding-right: 1em;
   }
 
   .past__events .texas {
     width: 350px;
     height: 200px;
-    background:
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 0.7),
-        rgba(252, 0, 0, 0.7)
-      ),
-      url('assets/images/hand-clapping.gif');
     margin: 2em 0 4em 1em;
-    color: #fff;
-  }
-
-  .past__events .mississippi p,
-  .past__events .mississippi h2,
-  .past__events .texas h2,
-  .past__events .texas p {
-    position: relative;
-    top: 30%;
-    padding: 0.3em 0;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 800;
   }
 
   .about__footer {
